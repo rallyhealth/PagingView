@@ -45,8 +45,6 @@ class PagingView: UIView {
     fileprivate lazy var pageControl: UIPageControl = {
         let control = UIPageControl()
         control.translatesAutoresizingMaskIntoConstraints = false
-        control.pageIndicatorTintColor = UIColor(named: .grayFive)
-        control.currentPageIndicatorTintColor = UIColor(named: .hueOneLight)
         control.hidesForSinglePage = true
 
         return control
@@ -125,7 +123,7 @@ class PagingView: UIView {
     }
 
     func clearPagingSubviews() {
-        self.stackView.clear()
+        self.stackView.arrangedSubviews.forEach { $0.removeFromSuperview() }
         self.scrollView.contentOffset = CGPoint.zero
         self.setNeedsUpdateConstraints()
     }
