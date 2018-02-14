@@ -10,6 +10,11 @@ PagingView is a UI control used in the iOS Care app. A swiping gesture controls 
 ```swift
 let pagingView = PagingView(frame: view.frame)
 pagingView.delegate = self
+
+// Add your pagingSubviews (instantiated somewhere else):
+pagingView.addPagingSubview(customView1)
+pagingView.addPagingSubview(customView2)
+pagingView.addPagingSubview(customView3)
 ```
 
 ## Installation
