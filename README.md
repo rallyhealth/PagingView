@@ -2,8 +2,7 @@
 PagingView is a UI control used in the iOS Care app. A swiping gesture controls the display of paged information.
 
 ## Demo
-
-
+![PagingView](https://github.com/rallyhealth/PagingView/blob/master/PagingView.gif)
 
 ## Usage
 
