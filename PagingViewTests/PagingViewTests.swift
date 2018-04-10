@@ -25,17 +25,26 @@ import XCTest
 @testable import PagingView
 
 class PagingViewTests: XCTestCase {
+
+    var pagingView: PagingView?
+
+    override func setUp() {
+        super.setUp()
+        // Put setup code here. This method is called before the invocation of each test method in the class.
+
+        pagingView = PagingView(frame: CGRect.zero)
+    }
     
     func testAddPagingViews() {
-        let pagingView = PagingView(frame: CGRect.zero)
-        pagingView.addPagingSubview(UIView(frame: CGRect.zero))
-        pagingView.addPagingSubview(UIView(frame: CGRect.zero))
-        pagingView.addPagingSubview(UIView(frame: CGRect.zero))
+        pagingView?.addPagingSubview(UIView(frame: CGRect.zero))
 
-        XCTAssertEqual(pagingView.pagingSubviews.count, 3)
+        XCTAssertEqual(pagingView?.pagingSubviews.count, 1)
+    }
 
-        pagingView.clearPagingSubviews()
+    func testClearPagingViews() {
+        pagingView?.addPagingSubview(UIView(frame: CGRect.zero))
+        pagingView?.clearPagingSubviews()
 
-        XCTAssertEqual(pagingView.pagingSubviews.count, 0)
+        XCTAssertEqual(pagingView?.pagingSubviews.count, 0)
     }
 }
