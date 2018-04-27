@@ -16,16 +16,6 @@ pagingView.addPagingSubview(customView2)
 pagingView.addPagingSubview(customView3)
 ```
 
-## Installation
-
-### CocoaPods
-
-Add this to your Podfile.
-
-```ogdl
-pod 'PagingView'
-```
-
 ## License
 
 MIT
