@@ -53,7 +53,6 @@
 		2128D618207D4E9B00D682BB = {
 			isa = PBXGroup;
 			children = (
-				2128D63C207D4F7900D682BB /* PagingView.swift */,
 				21F258A420990C84002456A6 /* PagingView */,
 				21F2589920990C26002456A6 /* PagingViewTests */,
 				2128D623207D4E9B00D682BB /* Products */,
@@ -81,6 +80,7 @@
 		21F258A420990C84002456A6 /* PagingView */ = {
 			isa = PBXGroup;
 			children = (
+				2128D63C207D4F7900D682BB /* PagingView.swift */,
 				21F258A520990C84002456A6 /* PagingView.h */,
 				21F258A620990C84002456A6 /* Info.plist */,
 			);
