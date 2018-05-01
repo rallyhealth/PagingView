@@ -7,20 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2128D647207D518A00D682BB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2128D645207D4FC700D682BB /* Info.plist */; };
-		2128D648207D518D00D682BB /* PagingViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2128D643207D4FBE00D682BB /* PagingViewTests.swift */; };
-		2128D649207D53A600D682BB /* PagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2128D63C207D4F7900D682BB /* PagingView.swift */; };
+		21F2589C20990C27002456A6 /* PagingViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F2589A20990C26002456A6 /* PagingViewTests.swift */; };
+		21F258A720990C84002456A6 /* PagingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 21F258A520990C84002456A6 /* PagingView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21F258AD20990CF5002456A6 /* PagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2128D63C207D4F7900D682BB /* PagingView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		21F258AB20990CCD002456A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2128D619207D4E9B00D682BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21F258A220990C84002456A6;
+			remoteInfo = PagingView;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2128D62B207D4E9B00D682BB /* PagingViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PagingViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2128D63C207D4F7900D682BB /* PagingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingView.swift; sourceTree = "<group>"; };
-		2128D643207D4FBE00D682BB /* PagingViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PagingViewTests.swift; path = PagingViewTests/PagingViewTests.swift; sourceTree = SOURCE_ROOT; };
-		2128D645207D4FC700D682BB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = PagingViewTests/Info.plist; sourceTree = SOURCE_ROOT; };
+		21F2589A20990C26002456A6 /* PagingViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingViewTests.swift; sourceTree = "<group>"; };
+		21F2589B20990C26002456A6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21F258A320990C84002456A6 /* PagingView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PagingView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21F258A520990C84002456A6 /* PagingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PagingView.h; sourceTree = "<group>"; };
+		21F258A620990C84002456A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2128D628207D4E9B00D682BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21F2589F20990C84002456A6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -34,7 +54,8 @@
 			isa = PBXGroup;
 			children = (
 				2128D63C207D4F7900D682BB /* PagingView.swift */,
-				2128D642207D4FA900D682BB /* PagingViewTests */,
+				21F258A420990C84002456A6 /* PagingView */,
+				21F2589920990C26002456A6 /* PagingViewTests */,
 				2128D623207D4E9B00D682BB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,21 +64,41 @@
 			isa = PBXGroup;
 			children = (
 				2128D62B207D4E9B00D682BB /* PagingViewTests.xctest */,
+				21F258A320990C84002456A6 /* PagingView.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2128D642207D4FA900D682BB /* PagingViewTests */ = {
+		21F2589920990C26002456A6 /* PagingViewTests */ = {
 			isa = PBXGroup;
 			children = (
-				2128D645207D4FC700D682BB /* Info.plist */,
-				2128D643207D4FBE00D682BB /* PagingViewTests.swift */,
+				21F2589A20990C26002456A6 /* PagingViewTests.swift */,
+				21F2589B20990C26002456A6 /* Info.plist */,
 			);
-			name = PagingViewTests;
-			path = "New Group";
+			path = PagingViewTests;
+			sourceTree = "<group>";
+		};
+		21F258A420990C84002456A6 /* PagingView */ = {
+			isa = PBXGroup;
+			children = (
+				21F258A520990C84002456A6 /* PagingView.h */,
+				21F258A620990C84002456A6 /* Info.plist */,
+			);
+			path = PagingView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		21F258A020990C84002456A6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21F258A720990C84002456A6 /* PagingView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		2128D62A207D4E9B00D682BB /* PagingViewTests */ = {
@@ -71,11 +112,30 @@
 			buildRules = (
 			);
 			dependencies = (
+				21F258AC20990CCD002456A6 /* PBXTargetDependency */,
 			);
 			name = PagingViewTests;
 			productName = PagingViewTests;
 			productReference = 2128D62B207D4E9B00D682BB /* PagingViewTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		21F258A220990C84002456A6 /* PagingView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21F258A820990C84002456A6 /* Build configuration list for PBXNativeTarget "PagingView" */;
+			buildPhases = (
+				21F2589E20990C84002456A6 /* Sources */,
+				21F2589F20990C84002456A6 /* Frameworks */,
+				21F258A020990C84002456A6 /* Headers */,
+				21F258A120990C84002456A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PagingView;
+			productName = PagingView;
+			productReference = 21F258A320990C84002456A6 /* PagingView.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -88,6 +148,9 @@
 				ORGANIZATIONNAME = "Rally Health";
 				TargetAttributes = {
 					2128D62A207D4E9B00D682BB = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					21F258A220990C84002456A6 = {
 						CreatedOnToolsVersion = 9.3;
 					};
 				};
@@ -104,6 +167,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				21F258A220990C84002456A6 /* PagingView */,
 				2128D62A207D4E9B00D682BB /* PagingViewTests */,
 			);
 		};
@@ -114,7 +178,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2128D647207D518A00D682BB /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21F258A120990C84002456A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,12 +195,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2128D649207D53A600D682BB /* PagingView.swift in Sources */,
-				2128D648207D518D00D682BB /* PagingViewTests.swift in Sources */,
+				21F2589C20990C27002456A6 /* PagingViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21F2589E20990C84002456A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21F258AD20990CF5002456A6 /* PagingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		21F258AC20990CCD002456A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21F258A220990C84002456A6 /* PagingView */;
+			targetProxy = 21F258AB20990CCD002456A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2128D634207D4E9B00D682BB /* Debug */ = {
@@ -289,6 +374,54 @@
 			};
 			name = Release;
 		};
+		21F258A920990C84002456A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PagingView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rallyhealth.PagingView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		21F258AA20990C84002456A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PagingView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rallyhealth.PagingView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -306,6 +439,15 @@
 			buildConfigurations = (
 				2128D63A207D4E9B00D682BB /* Debug */,
 				2128D63B207D4E9B00D682BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21F258A820990C84002456A6 /* Build configuration list for PBXNativeTarget "PagingView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21F258A920990C84002456A6 /* Debug */,
+				21F258AA20990C84002456A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
